@@ -20,20 +20,52 @@
     
 <h1 style="text-align: center;">My artworks</h1>
 <div class="row">
-    <div class="column" style="text-align: center;">
+    <div class="p1">
       <img src="images/barnight.png" width="500" height="275">
     </div>
-    <div class="column" style="text-align: center;">
+    <div class="p2">
       <img src="images/battle.png"width="500" height="275">
     </div>
-    <div class="column" style="text-align: center;">
+    <div class="p3">
       <img src="images/chads2.png"width="500" height="450">
     </div>
   </div>
 
   <div class="column" style="text-align: center;">
     Click here to go back
-    <a style ="padding: 50;"href="index.html"><img src="like.png" alt="next" width="50" height="50" class="center"> </a>
+    <a style ="padding: 50;"href="index.html"><img src="images/like.png" alt="next" width="50" height="50" class="center"> </a>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+      anime({
+        targets: '.p1',
+        translateX: 350,
+        rotate: {value: 360, duration: 1800, easing: 'easeInOutSine'},
+
+        opacity: [0, 1], //start and end value
+        easing: 'easeInOutSine',
+      });
+
+      anime({
+        targets: '.p2',
+        translateX: 350,
+        rotate: {value: 360, duration: 1800, easing: 'easeInOutSine'},
+
+        opacity: [0, 1], //start and end value
+        easing: 'easeInOutSine',
+      });
+
+      anime({
+        targets: '.p3',
+        translateX: 350,
+        rotate: {value: 360, duration: 1800, easing: 'easeInOutSine'},
+
+        opacity: [0, 1], //start and end value
+        easing: 'easeInOutSine',
+      });
+    </script>
+
 </div>
 
 </body>
