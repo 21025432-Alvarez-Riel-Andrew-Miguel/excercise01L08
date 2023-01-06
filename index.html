@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Me</title>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+        <style>
+        body {
+            font-family: 'Actor';font-size: 22px;
+        }
+        .me{
+            width:150px;
+            height:300px;
+            text-align: center;
+        }
+        </style>
+    </head>
+
+
+
+    <body>
+        
+
+
+
+        <h1 style="text-align: center;">About Me</h1>
+
+        <br>
+        <div class="me">
+            <img src="images/photo_2022-02-06_14-22-32.jpg" style="width:225px; height:300px">
+        </div>
+        <br>
+        <br>
+        <div class="tt1"><h3>I am currently studying in Republic Polytechnic.</h3></div>
+        <br>
+        <div class="tt2"><h3>I'm currently in the Digital Design and Development Diploma Course.</h3></div>
+        <br>
+
+        <div class="column" style="text-align: center;">
+            Click here to see some works I've done
+            <a style ="padding: 50;"href="hobby.html"><img src="images/like.png" alt="next" width="50" height="50" class="center"> </a>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script>
+            anime({
+                targets: '.me',
+                translateX: 500,
+                rotate: {value: 360, duration: 1800, easing: 'easeInOutSine'},
+                scale: {value: 1.25, duration: 1600, easing: 'easeInOutQuart'},
+                opacity: [0, 1], //start and end value
+                easing: 'easeInOutSine',
+            });
+
+            anime({
+                targets: ".tt1",
+                translateX: 350,
+                opacity: [0, 1], //start and end values
+                delay: 2000
+            });
+
+            anime({
+                targets: ".tt2",
+                translateY: -10,
+                translateX: 280,
+                opacity: [0, 1], //start and end values
+                delay: 2000
+            });
+
+        </script>
+    </body>
+
+</html>
